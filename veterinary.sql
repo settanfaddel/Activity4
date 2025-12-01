@@ -96,3 +96,16 @@ VALUES
 (8, 7, '2025-11-06', 'Mystic vaccination'),
 (9, 5, '2025-11-06', 'Rune energy stabilization'),
 (10, 10, '2025-11-07', 'Dream-state behavior evaluation');
+
+INSERT INTO doctors(doctorid, dfirstname, dlastname, speciality, phone, email)
+VALUES
+(1, 'Dr.Maria', 'Santos', 'General Veterinarian', '987-654-3210', 'maria@example.com'),
+(2, 'Dr.Antonio', 'Gonzales', 'Feline Specialist', '555-123-4567', 'antonio@example.com'),
+(3, 'Dr.Felipe', 'Luna', 'Orthopedic Specialist', '111-222-3333', 'felipe@example.com'),
+(4, 'Dr.Sofia', 'Reyes', 'Dermatology Specialist', '999-888-7777', 'sofia@example.com'),
+(5, 'Dr.Luis', 'Torres', 'Surgery Specialist', '123-555-7777', 'luis@example.com'),
+(6, 'Dr.Carmen', 'Fernandez', 'Opthalmology Specialist', '333-222-1111', 'carmen@example.com'),
+(7, 'Dr.Rafael', 'Castillo', 'Avian Specialist', '222-333-4444', 'rafael@example.com'),
+(8, 'Dr.Elena', 'Navarro', 'Orthopedic Specialist', '444-555-6666', 'elena@example.com'),
+(9, 'Dr.Paolo', 'Mercado', 'Surgery Specialist', '777-888-9999', 'paolo@example.com'),
+(10, 'Dr.Luz', 'Salazar', 'Internal Medicine', '666-777-8888', 'luz@example.com');
