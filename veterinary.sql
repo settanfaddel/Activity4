@@ -83,3 +83,16 @@ VALUES
 (8, 'Frost', 'Cat', 'Russian Blue', '2021-11-30', 'Male', 'Gray', 6),
 (9, 'Mocha', 'Dog', 'Pug', '2016-07-14', 'Male', 'Fawn', 9),
 (10, 'Star', 'Cat', 'Bengal', '2024-01-28', 'Female', 'Spotted Brown', 8);
+
+INSERT INTO appointments(appointid, animalid, appointdate, reason)
+VALUES
+(1, 4, '2025-11-01', 'Lunar energy check-up'),
+(2, 1, '2025-11-01', 'Crystal-infused grooming'),
+(3, 8, '2025-11-02', 'Wing polishing and feather care'),
+(4, 3, '2025-11-03', 'Forest pollen allergy treatment'),
+(5, 6, '2025-11-03', 'Hydration therapy'),
+(6, 2, '2025-11-04', 'Glow enhancement procedure'),
+(7, 9, '2025-11-05', 'Routine healing aura scan'),
+(8, 7, '2025-11-06', 'Mystic vaccination'),
+(9, 5, '2025-11-06', 'Rune energy stabilization'),
+(10, 10, '2025-11-07', 'Dream-state behavior evaluation');
