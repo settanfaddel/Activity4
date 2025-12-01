@@ -154,3 +154,14 @@ FROM appointments;
 SELECT SUM(totalamount) 
 AS TotalSales FROM invoices;
 
+SELECT COUNT(*) AS TotalAppointments
+FROM appointments
+WHERE animalid IN (
+    SELECT animalid
+    FROM animals
+    WHERE ownerid = (
+        SELECT ownerid
+        from owners
+        WHERE ofirstname = 'Miguel'
+    )
+);
