@@ -165,3 +165,10 @@ WHERE animalid IN (
         WHERE ofirstname = 'Miguel'
     )
 );
+
+SELECT b.name AS Animal, COUNT(*) AS TotalAppointments
+FROM appointments a
+JOIN animals b ON a.animalid = b.animalid
+GROUP BY b.name
+ORDER BY COUNT(*) DESC
+LIMIT 1;
