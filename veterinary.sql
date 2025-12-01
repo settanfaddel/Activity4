@@ -56,7 +56,6 @@ CREATE TABLE medicalrecords(
     FOREIGN KEY (animalid) REFERENCES animals(animalid),
     FOREIGN KEY (doctorid) REFERENCES doctors(doctorid)
 );
-
 INSERT INTO owners(
     ownerid, ofirstname, olastname, address, phone, email
 )
@@ -71,3 +70,16 @@ VALUES
 (8, 'Kael', 'Stormborn', 'Thunderpeak Ridge, Stormhold', '09399887722', 'kael.stormborn@thunderhub.gg'),
 (9, 'Selene', 'Riversong', 'Moonwater Village, Azure Plains', '09467788990', 'selene.riversong@ripplemail.org'),
 (10, 'Finn', 'Brightspark', 'Gadget Row, Clockwork District', '09574561278', 'finn.brightspark@mechtech.io');
+
+INSERT INTO animals (animalid, name, species, breed, dateofbirth, gender, color, ownerid)
+VALUES
+(1, 'Cleo', 'Cat', 'Ragdoll', '2020-08-12', 'Female', 'Blue Point', 3),
+(2, 'Bolt', 'Dog', 'Husky', '2019-10-03', 'Male', 'Black & White', 5),
+(3, 'Nori', 'Cat', 'Munchkin', '2021-06-22', 'Female', 'Brown Tabby', 2),
+(4, 'Bruno', 'Dog', 'Beagle', '2018-04-18', 'Male', 'Tricolor', 7),
+(5, 'Pumpkin', 'Cat', 'Maine Coon', '2022-02-10', 'Male', 'Orange Tabby', 1),
+(6, 'Roxy', 'Dog', 'Golden Retriever', '2017-12-01', 'Female', 'Golden', 4),
+(7, 'Kira', 'Dog', 'Pomeranian', '2023-03-05', 'Female', 'Cream', 10),
+(8, 'Frost', 'Cat', 'Russian Blue', '2021-11-30', 'Male', 'Gray', 6),
+(9, 'Mocha', 'Dog', 'Pug', '2016-07-14', 'Male', 'Fawn', 9),
+(10, 'Star', 'Cat', 'Bengal', '2024-01-28', 'Female', 'Spotted Brown', 8);
