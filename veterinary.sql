@@ -20,6 +20,7 @@ color VARCHAR(50),
 ownerid INT,
 FOREIGN KEY (ownerid) REFERENCES owners(ownerid)
 );
+
 CREATE TABLE appointments (
     appointid INT PRIMARY KEY,
     animalid INT,
@@ -42,4 +43,16 @@ invoiceid INT PRIMARY KEY,
 appointid INT,
 totalamount DECIMAL(10, 2),
 paymentdate TIME
+);
+
+CREATE TABLE medicalrecords(
+    recordid INT PRIMARY KEY,
+    animalid INT,
+    recorddate DATETIME,
+    doctorid INT,
+    diagnosis VARCHAR(255),
+    prescription VARCHAR(255),
+    notes VARCHAR(255),
+    FOREIGN KEY (animalid) REFERENCES animals(animalid),
+    FOREIGN KEY (doctorid) REFERENCES doctors(doctorid)
 );
